@@ -10,7 +10,6 @@ var app = express()
 app.use('/graphql', graphqlHttp({schema: schema}))
 
 // The rest of the routes are just for serving static files
-app.use('/react', express.static('./node_modules/react/dist'))
 app.use('/relay', express.static('./node_modules/react-relay/dist'))
 app.use('/', express.static('./public'))
 

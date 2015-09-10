@@ -18,7 +18,8 @@
     "express-graphql": "^0.3.0",
     "graphql": "^0.4.3",
     "graphql-relay": "^0.3.2",
-    "react": "^0.14.0-beta3",
+    "react": "^0.14.0-rc1",
+    "react-dom": "^0.14.0-rc1",
     "react-relay": "^0.2.1"
   },
   "devDependencies": {
@@ -30,12 +31,9 @@
     "onchange": "^2.0.0",
     "parallelshell": "^2.0.0"
   },
-  "browser": {
-    "react": "react/dist/react.min.js",
-    "react-relay": "react-relay/dist/relay.min.js"
-  },
   "browserify-shim": {
     "react": "global:React",
+    "react-dom": "global:ReactDOM",
     "react-relay": "global:Relay"
   },
   "browserify": {

@@ -1,5 +1,6 @@
 /* eslint-env es6 */
 var React = require('react')
+var ReactDOM = require('react-dom')
 var Relay = require('react-relay')
 var App = require('./App')
 
@@ -7,7 +8,7 @@ var App = require('./App')
 // well as App.js and any other client-side dependencies and create
 // public/bundle.js which will be requested by public/index.html
 
-React.render(
+ReactDOM.render(
   // At the top of a Relay tree is the root container, which we pass our
   // wrapped App component to, as well as the query configuration ("route"). If
   // we need to render a different component, say as a result of a navigation

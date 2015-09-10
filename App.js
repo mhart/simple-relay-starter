@@ -16,7 +16,7 @@ class App extends React.Component {
           {/* In schema/schema.js we define a Connection between users and widgets */}
           {/* Connections use `edges` and `node` to hold paging info and child items */}
           {this.props.user.widgets.edges.map(edge =>
-            <li>{edge.node.name} (Global ID: {edge.node.id})</li>
+            <li key={edge.node.id}>{edge.node.name} (Global ID: {edge.node.id})</li>
           )}
         </ul>
       </div>
