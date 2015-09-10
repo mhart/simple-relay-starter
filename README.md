@@ -104,6 +104,7 @@ exports.queries = {
 `browser.js`:
 ```js
 var React = require('react')
+var ReactDOM = require('react-dom')
 var Relay = require('react-relay')
 var App = require('./App')
 
@@ -111,7 +112,7 @@ var App = require('./App')
 // well as App.js and any other client-side dependencies and create
 // public/bundle.js which will be requested by public/index.html
 
-React.render(
+ReactDOM.render(
   // At the top of a Relay tree is the root container, which we pass our
   // wrapped App component to, as well as the query configuration ("route"). If
   // we need to render a different component, say as a result of a navigation
@@ -128,7 +129,8 @@ React.render(
 `public/index.html`:
 ```html
 <!-- include React and Relay scripts (we don't bundle them) -->
-<script src=/react/react.min.js></script>
+<script src=//fb.me/react-0.14.0-rc1.min.js></script>
+<script src=//fb.me/react-dom-0.14.0-rc1.min.js></script>
 <script src=/relay/relay.min.js></script>
 <div id=content />
 <!-- now request our browserified bundle which will run the React.render -->
@@ -149,7 +151,6 @@ var app = express()
 app.use('/graphql', graphqlHttp({schema: schema}))
 
 // The rest of the routes are just for serving static files
-app.use('/react', express.static('./node_modules/react/dist'))
 app.use('/relay', express.static('./node_modules/react-relay/dist'))
 app.use('/', express.static('./public'))
 
