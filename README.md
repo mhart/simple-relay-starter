@@ -129,8 +129,8 @@ ReactDOM.render(
 `public/index.html`:
 ```html
 <!-- include React and Relay scripts (we don't bundle them) -->
-<script src=//fb.me/react-0.14.6.min.js></script>
-<script src=//fb.me/react-dom-0.14.6.min.js></script>
+<script src=//fb.me/react-0.14.7.min.js></script>
+<script src=//fb.me/react-dom-0.14.7.min.js></script>
 <script src=/relay/relay.min.js></script>
 <div id=content />
 <!-- now request our browserified bundle which will run the React.render -->

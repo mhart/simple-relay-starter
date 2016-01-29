@@ -14,12 +14,12 @@
   "author": "Michael Hart <michael.hart.au@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.13.3",
+    "express": "^4.13.4",
     "express-graphql": "^0.4.5",
     "graphql": "^0.4.14",
     "graphql-relay": "^0.3.6",
-    "react": "^0.14.6",
-    "react-dom": "^0.14.6",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
     "react-relay": "^0.6.1"
   },
   "devDependencies": {
