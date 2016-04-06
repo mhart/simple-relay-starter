@@ -1,6 +1,6 @@
 {
   "name": "simple-relay-starter",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "description": "A very simple example of React Relay using Browserify",
   "main": "server.js",
   "repository": "mhart/simple-relay-starter",
