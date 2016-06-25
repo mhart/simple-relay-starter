@@ -1,7 +1,6 @@
-/* eslint-env es6 */
-var React = require('react')
+var React = require('react') // eslint-disable-line no-unused-vars
 var ReactDOM = require('react-dom')
-var Relay = require('react-relay')
+var Relay = require('react-relay') // eslint-disable-line no-unused-vars
 var App = require('./App')
 
 // This file is the entry point on the browser – browserify will compile it, as
@@ -16,7 +15,7 @@ ReactDOM.render(
   // We also illustrate the use of the onReadyStateChange handler in case
   // there's a network error, etc
   <Relay.RootContainer Component={App.Container} route={App.queries}
-    onReadyStateChange={({error}) => { if (error) console.error(error) }} />,
+    onReadyStateChange={({error}) => { if (error) console.error(error) }} />, // eslint-disable-line no-console
 
   document.getElementById('content')
 )

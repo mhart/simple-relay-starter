@@ -1,4 +1,3 @@
-/* eslint-env es6 */
 var React = require('react')
 var Relay = require('react-relay')
 

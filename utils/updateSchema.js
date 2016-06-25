@@ -5,6 +5,6 @@ var introspectionQuery = require('graphql/utilities').introspectionQuery
 var schema = require('../schema/schema')
 
 graphql(schema, introspectionQuery).then(function(result) {
-  if (result.errors) return console.error(result.errors)
+  if (result.errors) return console.error(result.errors) // eslint-disable-line no-console
   fs.writeFileSync(path.join(__dirname, '../schema/schema.json'), JSON.stringify(result, null, 2))
 })
